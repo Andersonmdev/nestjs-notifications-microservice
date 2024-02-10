@@ -11,7 +11,7 @@ interface CountRecipientNotificationsResponse {
 
 @Injectable()
 export class CountRecipientNotificationsUseCase {
-  constructor(private readonly notificationRepository: NotificationsRepository) {}
+  constructor(private readonly notificationRepository: NotificationsRepository) { }
 
   async execute(request: CountRecipientNotificationsRequest): Promise<CountRecipientNotificationsResponse> {
     const { recipientId } = request;

@@ -6,4 +6,4 @@ import { MessagingModule } from './infra/messaging/messaging.module';
 @Module({
   imports: [HttpModule, DatabaseModule, MessagingModule],
 })
-export class AppModule {}
+export class AppModule { }

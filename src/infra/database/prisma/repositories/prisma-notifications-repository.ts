@@ -1,12 +1,12 @@
+import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma.service';
+import { PrismaNotificationMapper } from '../mappers/prisma-notification-mapper';
 import { Notification } from '../../../../application/entities/notification';
 import { NotificationsRepository } from '../../../../application/repositories/notifications-repository';
-import { Injectable } from '@nestjs/common';
-import { PrismaNotificationMapper } from '../mappers/prisma-notification-mapper';
 
 @Injectable()
 export class PrismaNotificationsRepository implements NotificationsRepository {
-  constructor(private readonly prismaService: PrismaService) {}
+  constructor(private readonly prismaService: PrismaService) { }
 
   async countManyByRecipientId(recipientId: string): Promise<number> {
     const count = await this.prismaService.notification.count({
