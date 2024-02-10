@@ -1,20 +1,31 @@
-# Nestjs Notifications Microservice
+# NestJS Notifications Microservice
 
-Desenvolvimento de um microsserviço de notificações utilizando NestJS.
+## Overview
 
-Alguns padrões e conceitos utilizados:
+This repository contains a Notifications Microservice built using [NestJS](https://nestjs.com/). The microservice is designed to handle various notification functionalities, providing a scalable and efficient solution for integrating notifications into your applications.
+
+## Design Patterns and Architectural Principles
 
 - SOLID
-- Injeção de dependências e Inversão de dependências
+- Domain-Driven Design (DDD)
+- Dependency Injection and Inversion of Control
 - Repository Pattern
 - Data Mapper Pattern
-- Database In Memory
-- DDD
+- Data In Memory
 
-- Tecnologias utilizadas:
+## Main Technologies
 
-  - NestJS
-  - Typescript
-  - Jest
-  - Prisma
-  - SQlite
+- NestJS
+- TypeScript
+- Prisma
+- SQLite
+- Jest
+
+## Prerequisites
+
+- Node.js and npm installed on your machine.
+- SQLite or any other SQL database installed on your machine.
+
+## License
+
+This project is licensed under the [MIT License](/LICENSE.md).
